@@ -548,6 +548,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.10.1</version>
           <configuration>
             <source>${compileSource}</source>
             <target>${compileSource}</target>
@@ -657,6 +658,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-source-plugin</artifactId>
+          <version>3.2.1</version>
           <executions>
             <execution>
               <id>attach-sources</id>
@@ -672,6 +674,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-jar-plugin</artifactId>
+          <version>3.3.0</version>
           <executions>
             <execution>
               <phase>prepare-package</phase>
@@ -835,6 +838,7 @@
              does all assembly-->
             <skipAssembly>true</skipAssembly>
           </configuration>
+          <version>3.4.2</version>
         </plugin>
         <plugin>
           <groupId>org.xolstice.maven.plugins</groupId>
@@ -899,6 +903,11 @@
               </goals>
             </execution>
           </executions>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-shade-plugin</artifactId>
+          <version>3.4.1</version>
         </plugin>
       </plugins>
     </pluginManagement>
@@ -1257,6 +1266,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-resources-plugin</artifactId>
+        <version>3.3.0</version>
         <!--$NO-MVN-MAN-VER$ -->
         <inherited>false</inherited>
         <executions>
@@ -1349,6 +1359,7 @@
     </plugins>
   </build>
   <properties>
+    <project.build.outputTimestamp>2023-01-01T00:00:00Z</project.build.outputTimestamp>
     <!-- override on command line to have generated LICENSE files include
          diagnostic info for verifying notice requirements -->
     <license.debug.print.included>false</license.debug.print.included>
